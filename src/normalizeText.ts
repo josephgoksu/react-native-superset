@@ -1,18 +1,8 @@
-/**
- *
- * Credits :
- * https://github.com/react-native-training/react-native-elements/blob/master/src/helpers/normalizeText.js
- *
- * Thank you so much for awesome normalization methods.
- * All Credits are going for @xiaoneng & RN Elements Team
- *
- */
-
-import { PixelRatio, Dimensions } from "react-native";
+import { PixelRatio, Dimensions } from 'react-native';
 
 const pixelRatio = PixelRatio.get();
-const deviceHeight = Dimensions.get("window").height;
-const deviceWidth = Dimensions.get("window").width;
+const deviceHeight = Dimensions.get('window').height;
+const deviceWidth = Dimensions.get('window').width;
 
 // -- Testing Only --
 // const fontScale = PixelRatio.getFontScale();
@@ -23,7 +13,7 @@ const deviceWidth = Dimensions.get("window").width;
 // console.log('normalizeText getDW ->', deviceWidth);
 // console.log('normalizeText getPSFLS ->', layoutSize);
 
-const normalize = (size: number) => {
+export const normalizeText = (size: number) => {
   if (pixelRatio >= 2 && pixelRatio < 3) {
     // iphone 5s and older Androids
     if (deviceWidth < 360) {
@@ -90,5 +80,3 @@ const normalize = (size: number) => {
 
   return size;
 };
-
-export default normalize;

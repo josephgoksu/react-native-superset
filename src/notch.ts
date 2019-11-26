@@ -1,4 +1,4 @@
-import { Dimensions, Platform, StatusBar } from "react-native";
+import { Dimensions, Platform, StatusBar } from 'react-native';
 
 // iPhone X Dimensions
 const iPhoneX_HEIGHT = 812;
@@ -40,9 +40,9 @@ export function isIPhoneXsMax(dim: any) {
 }
 
 function detection() {
-  const dim = Dimensions.get("window");
+  const dim = Dimensions.get('window');
   return (
-    Platform.OS === "ios" &&
+    Platform.OS === 'ios' &&
     !Platform.isPad &&
     !Platform.isTVOS &&
     (isIPhoneX(dim) || isIPhoneXr(dim) || isIPhoneXs(dim) || isIPhoneXsMax(dim))
@@ -52,6 +52,6 @@ function detection() {
 export function getStatusBarHeight() {
   return Platform.select({
     ios: hasNotch() ? 44 : 30,
-    android: StatusBar.currentHeight
+    android: StatusBar.currentHeight,
   });
 }
