@@ -1,0 +1,23 @@
+{
+  "name": "react-native-superset",
+  "version": "0.0.1",
+  "description": "awesome tools for quick mobile app development with react native",
+  "main": "index.ts",
+  "author": {
+      "name": "Yusuf Emre Göksu",
+      "email": "me@yusufgoksu.com",
+      "url": "https://yusufgoksu.com"
+  },
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.60.23",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "react-native": "^0.61.5"
+  }
+}
