@@ -1,12 +1,14 @@
 {
-  "name": "react-native-superset",
+  "name": "@y7usuf/react-native-superset",
   "version": "0.0.1",
   "description": "awesome tools for quick mobile app development with react native",
   "main": "index.ts",
-  "author": {
-      "name": "Yusuf Emre Göksu",
-      "email": "me@yusufgoksu.com",
-      "url": "https://yusufgoksu.com"
+  "author": "Yusuf E. Göksu <me@yusufgoksu.com>",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "url": "https://github.com/y7usuf/react-native-superset"
   },
   "private": false,
   "license": "MIT",
@@ -17,7 +19,7 @@
     "@types/react-native": "^0.60.23",
     "typescript": "^3.7.2"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react-native": "^0.61.5"
   }
 }
